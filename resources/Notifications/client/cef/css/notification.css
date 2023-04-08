@@ -91,13 +91,13 @@ progress{
     margin-bottom: -0.5vh;
 }
 
-.Fehler progress::-moz-progress-bar { 
+.Error progress::-moz-progress-bar { 
     background: var(--Red); 
 }
-.Fehler progress::-webkit-progress-value { 
+.Error progress::-webkit-progress-value { 
     background: var(--Red); 
 }
-.Fehler progress { 
+.Error progress { 
     background: var(--Red); 
 }
 
@@ -111,13 +111,13 @@ progress{
     background: var(--Yellow); 
 }
 
-.Erfolgreich progress::-moz-progress-bar { 
+.Success progress::-moz-progress-bar { 
     background: var(--Green); 
 }
-.Erfolgreich progress::-webkit-progress-value { 
+.Success progress::-webkit-progress-value { 
     background: var(--Green); 
 }
-.Erfolgreich progress { 
+.Success progress { 
     background: var(--Green);  
 }
 
