@@ -13,7 +13,7 @@ Created by Rezondes
 # Beschreibung
 Dieses Repository stellt eine alt:V-Ressource bereit, um dem Spieler einfache Benachrichtigungen anzuzeigen. <br>
 
-## Verwendung (Allgemein)
+# Verwendung (Allgemein)
 Am Ende wird immer diese Methode aufgerufen:
 ```javascript
 function showNotification(type, msg, duration, titleText = "")
