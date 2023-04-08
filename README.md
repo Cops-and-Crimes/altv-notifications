@@ -12,8 +12,6 @@ Created by Rezondes
 
 # Beschreibung
 Dieses Repository stellt eine alt:V-Ressource bereit, um dem Spieler einfache Benachrichtigungen anzuzeigen. <br>
-Diese Ressource ist schon etwas älter, wahrscheinlich nicht perfekt und wurde vor dem Upload nicht angepasst. <br>
-Für Verbesserungsvorschläge bin ich gerne offen. <br>
 
 ## Verwendung (Allgemein)
 Am Ende wird immer diese Methode aufgerufen:
