@@ -15,6 +15,30 @@ Dieses Repository stellt eine alt:V-Ressource bereit, um dem Spieler einfache Be
 Diese Ressource ist schon etwas älter, wahrscheinlich nicht perfekt und wurde vor dem Upload nicht angepasst. <br>
 Für Verbesserungsvorschläge bin ich gerne offen. <br>
 
+## Verwendung (Allgemein)
+Am Ende wird immer diese Methode aufgerufen:
+```javascript
+function showNotification(type, msg, duration, titleText = "")
+```
+
+```C#
+/// <param name="type">Farbe/param>
+```
+```javascript
+enum NotificationTypeEnum 
+{
+  Error, // Rot
+  Info, // Gelb
+  Success, // Grün 
+  Dispatch // Blau 
+} 
+```
+```C#
+/// <param name="msg">Nachricht, welche dem Spieler angezeigt wird</param>
+/// <param name="duration">In Millisekunden</param>
+/// <param name="title">Wenn nicht gesetzt => notificationType.ToString()</param>
+```
+
 ## Verwendung unter Javascript
 ```javascript
 // Client
