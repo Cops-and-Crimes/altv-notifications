@@ -27,7 +27,7 @@ function showNotification(type, msg, duration, titleText = "")
 ```
 
 ```C#
-/// <param name="type">Farbe/param>
+/// <param name="type">Farbe</param>
 ```
 ```javascript
 enum NotificationTypeEnum 
