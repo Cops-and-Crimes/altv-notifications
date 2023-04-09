@@ -13,7 +13,14 @@ Created by Rezondes
 # Beschreibung
 Dieses Repository stellt eine alt:V-Ressource bereit, um dem Spieler einfache Benachrichtigungen anzuzeigen. <br>
 
-# Verwendung (Allgemein)
+## Installation
+Fügen Sie einfach den Ordner `altv-rezondes-notifications` in ihren Serverordner `resources` und den Namen dieser Ressource zu Ihrer `server.toml` hinzu.
+
+```
+altv-rezondes-notifications
+```
+
+## Verwendung (Allgemein)
 Am Ende wird immer diese Methode aufgerufen:
 ```javascript
 function showNotification(type, msg, duration, titleText = "")
