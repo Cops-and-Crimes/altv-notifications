@@ -11,6 +11,8 @@ Created by Rezondes
 
 ⭐ Wenn dir dieses Repository geholfen hat!
 
+❤️ Ein Danke geht an [xLuxy](https://github.com/xLuxy) ❤️ <br>
+
 # Beschreibung
 Dieses Repository stellt eine alt:V-Ressource bereit, um dem Spieler einfache Benachrichtigungen anzuzeigen. <br>
 
