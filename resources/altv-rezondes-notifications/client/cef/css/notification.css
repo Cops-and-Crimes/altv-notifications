@@ -46,10 +46,6 @@ body{
     background-color: bisque;
     backdrop-filter: blur(1vw);
     margin-bottom: 2vw;
-    
-    box-shadow: 10px 10px 29px 4px rgba(0, 0, 0, 0.77);
-    -webkit-box-shadow: 10px 10px 29px 4px rgba(0, 0, 0, 0.77);
-    -moz-box-shadow: 10px 10px 29px 4px rgba(0, 0, 0, 0.77);
 }
 
 .Error{
@@ -75,7 +71,6 @@ h2, h4{
 }
 
 h2{
-    margin-top: -1.5vh;
     font-weight: bold;
 }
 
