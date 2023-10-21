@@ -1,0 +1,142 @@
+
+@font-face {
+    font-family: SourceCodePro;
+    src: url(./SourceCodePro-VariableFont_wght.ttf);
+  }
+
+
+body{
+    --Red: rgba(185, 0, 41, 1);
+    --Red5: rgba(185, 0, 41, .5);
+    --Blue: rgba(41, 155, 255, 1);
+    --Blue5: rgba(41, 155, 255, .5);
+    --Yellow: rgba(251, 254, 53, 1);
+    --Yellow5: rgba(251, 254, 53, .5);
+    --Orange5: rgba(248, 121, 2, .5);
+    --Orange: rgb(248, 121, 2);
+    --Green: rgba(56, 139, 8, 1); 
+    --Green5: rgba(56, 139, 8, .5); 
+    padding: 0;
+    margin: 0;
+    font-family: SourceCodePro;
+    color: white;
+    
+    font-size: 0.85vw;
+    
+    -ms-user-select: None;
+    -moz-user-select: None;
+    -webkit-user-select: None;
+    user-select: None;
+}
+
+#Container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    right: 0;
+    bottom: 41vh;
+    margin: 1vw;
+}
+
+.Notification{
+    width: 20vw;
+    background-color: bisque;
+    backdrop-filter: blur(1vw);
+    margin-bottom: 2vw;
+}
+
+.Error{
+    background-color: var(--Red5);
+}
+
+.Info{
+    background-color: var(--Yellow5);
+}
+
+.Success{
+    background-color: var(--Green5);
+}
+
+.Dispatch{
+    background-color: var(--Blue5);
+}
+
+.Admin{
+    background-color: var(--Orange5);
+}
+
+h2, h4{
+    margin-left: 1vw;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h2{
+    font-weight: bold;
+}
+
+h4{
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+    padding-right: 1vh;
+}
+
+progress{
+    width: 100%;
+    height: 0.6vh;
+    margin-bottom: -0.5vh;
+}
+
+.Error progress::-moz-progress-bar { 
+    background: var(--Red); 
+}
+.Error progress::-webkit-progress-value { 
+    background: var(--Red); 
+}
+.Error progress { 
+    background: var(--Red); 
+}
+
+.Info progress::-moz-progress-bar { 
+    background: var(--Yellow); 
+}
+.Info progress::-webkit-progress-value { 
+    background: var(--Yellow); 
+}
+.Info progress { 
+    background: var(--Yellow); 
+}
+
+.Success progress::-moz-progress-bar { 
+    background: var(--Green); 
+}
+.Success progress::-webkit-progress-value { 
+    background: var(--Green); 
+}
+.Success progress { 
+    background: var(--Green);  
+}
+
+.Dispatch progress::-moz-progress-bar { 
+    background: var(--Blue); 
+}
+.Dispatch progress::-webkit-progress-value { 
+    background: var(--Blue); 
+}
+.Dispatch progress { 
+    background: var(--Blue);  
+}
+
+.Admin progress::-moz-progress-bar { 
+    background: var(--Orange); 
+}
+.Admin progress::-webkit-progress-value { 
+    background: var(--Orange); 
+}
+.Admin progress { 
+    background: var(--Orange);  
+}
