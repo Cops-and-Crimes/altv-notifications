@@ -39,31 +39,22 @@ function animateProgressbar(element){
     }, 10);
 }
 
-function fadeIn(element) {
-    var op = 0.1; 
-    element.style.display = 'block';
-    var timer = setInterval(function () {
-        if (op >= 1){
-            clearInterval(timer);
-        }
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op += op * 0.1;
+function fadeIn(element, duration = 500) {
+    element.style.opacity = '0';
+    element.style.transition = `opacity ${duration}ms ease-in-out`;
+
+    setTimeout(() => {
+        element.style.opacity = '1';
     }, 10);
 }
 
-function fadeOut(element) {
-    var op = 1;  
-    var timer = setInterval(function () {
-        if (op <= 0.1){
-            clearInterval(timer);
-            element.style.display = 'none';
-            container.removeChild(element);
-        }
-        element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-        op -= op * 0.1;
-    }, 50);
+function fadeOut(element, duration = 500) {
+    element.style.transition = `opacity ${duration}ms ease-in-out`;
+    element.style.opacity = '0';
+    setTimeout(() => {
+        element.style.visibility = 'hidden';
+        notificationContainer.removeChild(element);
+    }, duration);
 }
 
 alt.on("CEF:Nofitications:Show", showNotification);
