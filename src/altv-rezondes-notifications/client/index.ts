@@ -10,7 +10,7 @@ notificationBrowser.on('Client:Notifications:Ready', () => {
 
 alt.onServer(
     'Client:Nofitications:Show',
-    (type: 'Error' | 'Info' | 'Success' | 'Dispatch' | 'Admin', msg: string, time: number, titel: string = '') => {
+    (type: 'Error' | 'Info' | 'Success' | 'Dispatch', msg: string, time: number, titel: string = '') => {
         if (!notificationBrowserReady) return;
 
         notificationBrowser.emit('CEF:Nofitications:Show', type, msg, time, titel);
@@ -19,7 +19,7 @@ alt.onServer(
 
 alt.on(
     'Client:Notifications:Show',
-    (type: 'Error' | 'Info' | 'Success' | 'Dispatch' | 'Admin', msg: string, time: number, titel: string = '') => {
+    (type: 'Error' | 'Info' | 'Success' | 'Dispatch', msg: string, time: number, titel: string = '') => {
         if (!notificationBrowserReady) return;
 
         notificationBrowser.emit('CEF:Nofitications:Show', type, msg, time, titel);
