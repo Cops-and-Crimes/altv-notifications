@@ -46,7 +46,7 @@ function fadeOut(element, duration = 500) {
         notificationContainer.removeChild(element);
     }, duration);
 }
-if ('alt' in windows) {
+if ('alt' in window) {
     alt.on('CEF:Nofitications:Show', createNotification);
     setTimeout(() => {
         alt.emit('Client:Notifications:Ready');
